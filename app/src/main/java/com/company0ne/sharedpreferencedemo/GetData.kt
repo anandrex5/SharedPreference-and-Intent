@@ -24,10 +24,10 @@ class GetData:AppCompatActivity() {
                //and get Data inside it
                val sharedPreferences = getSharedPreferences("MySharedPref", MODE_PRIVATE)
                val getName = sharedPreferences.getString("name", "")
-               val getAage = sharedPreferences.getString("age", "")
+               val getAge = sharedPreferences.getString("age", "")
 
                 //update our textView from the user entered data
                 nameOutput.text = getName
-                ageOutput.text = getAage
+                ageOutput.text = getAge
           }
      }

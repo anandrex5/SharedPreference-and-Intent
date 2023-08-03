@@ -4,14 +4,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity() {
 
     //Declare the all views
-    private lateinit var age: TextView
-    private lateinit var name: TextView
+    private lateinit var age: EditText
+    private lateinit var name: EditText
     private lateinit var button: Button
 
 
@@ -29,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         name.setText(sharedPreferences.getString("name", ""))
         age.setText(sharedPreferences.getString("age", ""))
         //if u remove only this block(Line 27-31), the user stored data is not displayed in EditText
-
 
 
         //set onClickListener
